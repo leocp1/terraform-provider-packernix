@@ -1,0 +1,3 @@
+#! /usr/bin/env sh
+printf "err" 1>&2
+printf "out"

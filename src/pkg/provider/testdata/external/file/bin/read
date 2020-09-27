@@ -1,0 +1,20 @@
+#! /usr/bin/env sh
+echo "$@" 1>&2
+set -eux
+
+name="$1"
+shift
+econtents="$(printf "$@")"
+prev=$(</dev/stdin)
+
+if [ "$prev" == "" ]; then
+  if [ ! -e "$name" ]; then
+    exit 0
+  fi
+  contents=$(< "$name")
+  if [ "$contents" == "$econtents" ] ; then
+    printf "$name"
+  fi
+else
+  printf "$prev"
+fi

@@ -1,0 +1,6 @@
+#! /usr/bin/env sh
+echo "$@" 1>&2
+IFS= read -r inp
+set -eux
+pname="$(printf "$inp" | cut -d ':' -f 1)"
+rm "$pname"

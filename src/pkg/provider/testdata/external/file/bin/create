@@ -1,0 +1,11 @@
+#! /usr/bin/env sh
+
+echo "$@" 1>&2
+
+set -eux
+
+filename="$1"
+shift
+printf "$@" > "$filename"
+
+printf "$filename"

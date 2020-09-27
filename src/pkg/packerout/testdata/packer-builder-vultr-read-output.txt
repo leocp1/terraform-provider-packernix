@@ -1,0 +1,10 @@
+160112860,,ui,say,==> read-vultr: Reading Vultr snapshots with Description=nixos-scrubbed
+160112860,,ui,say,Build 'read-vultr' finished.
+160112860,,ui,say,\n==> Builds finished. The artifacts of successful builds are:
+160112860,read-vultr,artifact-count,1
+160112860,read-vultr,artifact,0,builder-id,packer.vultr
+160112860,read-vultr,artifact,0,id,
+160112860,read-vultr,artifact,0,string,0
+160112860,read-vultr,artifact,0,files-count,0
+160112860,read-vultr,artifact,0,end
+160112860,,ui,say,--> read-vultr: 0
